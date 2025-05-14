@@ -3,14 +3,17 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
-): Promise<NextResponse> {
+  context: { params: { id: string } }
+) {
   try {
-    const product = await stripe.products.retrieve(params.id, {
+    const { id } = context.params;
+
+    const product = await stripe.products.retrieve(id, {
       expand: ["default_price"],
     });
+
     return NextResponse.json(product);
-  } catch (error) {
+  } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
