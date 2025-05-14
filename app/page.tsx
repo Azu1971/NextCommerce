@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { stripe } from "@/lib/stripe";
 import "./Home.css";
 import CartImage from "@/assets/Cart.png";
