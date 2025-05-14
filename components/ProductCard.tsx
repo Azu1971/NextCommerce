@@ -1,6 +1,7 @@
 import "./ProductCard.css";
 import Link from "next/link";
 import Stripe from "stripe";
+import Image from "next/image";
 
 interface Props {
   product: Stripe.Product;
