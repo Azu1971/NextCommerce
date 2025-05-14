@@ -8,7 +8,7 @@ const Success = () => {
   const { clearCart } = useCartStore();
   useEffect(() => {
     clearCart();
-  }, []);
+  }, [clearCart]);
   return (
     <div className="success-container">
       <h1>Payment Successful!</h1>

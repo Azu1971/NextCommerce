@@ -13,7 +13,7 @@ export async function GET(
     });
 
     return NextResponse.json(product);
-  } catch (error: any) {
+  } catch (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
