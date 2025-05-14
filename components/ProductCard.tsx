@@ -11,7 +11,12 @@ const ProductCard = ({ product }: Props) => {
   return (
     <Link href={`/products/${product.id}`}>
       <div className="product-card">
-        <Image src={product.images[0]} alt={product.name} />
+        <Image
+          src={product.images[0]}
+          alt={product.name}
+          width={300}
+          height={300}
+        />
         <h2>{product.name}</h2>
         <p>{product.description}</p>
         <h3>
