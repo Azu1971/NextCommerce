@@ -20,7 +20,11 @@ const ProductCard = ({ product }: Props) => {
         <h2>{product.name}</h2>
         <p>{product.description}</p>
         <h3>
-          <b>৳{product.default_price.unit_amount_decimal / 100}</b>
+          <b>
+            ৳
+            {typeof product.default_price === "object" &&
+              Number(product.default_price.unit_amount_decimal) / 100}
+          </b>
         </h3>
       </div>
     </Link>
