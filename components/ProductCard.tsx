@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import Link from "next/link";
 
-const ProductCard = ({ product }: any) => {
+const ProductCard = ({ product }) => {
   return (
     <Link href={`/products/${product.id}`}>
       <div className="product-card">
