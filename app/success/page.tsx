@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "./success.css";
+import "./Success.css";
 import { useEffect } from "react";
 import { useCartStore } from "@/store/cart-store";
 
