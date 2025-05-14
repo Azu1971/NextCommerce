@@ -1,11 +1,16 @@
 import "./ProductCard.css";
 import Link from "next/link";
+import Stripe from "stripe";
 
-const ProductCard = ({ product }) => {
+interface Props {
+  product: Stripe.Product;
+}
+
+const ProductCard = ({ product }: Props) => {
   return (
     <Link href={`/products/${product.id}`}>
       <div className="product-card">
-        <img src={product.images[0]} alt={product.name} />
+        <Image src={product.images[0]} alt={product.name} />
         <h2>{product.name}</h2>
         <p>{product.description}</p>
         <h3>
