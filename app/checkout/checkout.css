@@ -1,0 +1,28 @@
+.checkout-page {
+    justify-items: center;
+}
+.checkout-page h2 {
+    margin-bottom: 20px
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cart-item {
+    display: flex;
+    gap: 10px;
+
+}
+
+.cart-item-quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

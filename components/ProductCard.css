@@ -1,0 +1,15 @@
+.product-card {
+    background-color: #474747;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.product-card:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}

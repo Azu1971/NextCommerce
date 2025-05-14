@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    align-items: center;
+    display: flex;
+}
+.cart-icon span {
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 0.05rem 0.05rem;
+}
