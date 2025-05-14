@@ -80,7 +80,9 @@ const ProductPage = () => {
         <p>
           Total: ৳
           {quantity *
-            ((product.default_price?.unit_amount || 0) / 100).toFixed(2)}
+            ((Number(product.default_price?.unit_amount) || 0) / 100).toFixed(
+              2
+            )}
         </p>
       </div>
     </div>
