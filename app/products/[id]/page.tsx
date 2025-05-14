@@ -42,6 +42,8 @@ const ProductPage = () => {
   if (error) return <div>Error: {error}</div>;
   if (!product) return <div>Product not found</div>;
 
+  const normalizedId = Array.isArray(id) ? id[0] : id;
+
   const onAddItem = () => {
     addItem({
       id: product.id,
@@ -70,7 +72,7 @@ const ProductPage = () => {
           ৳ {((product.default_price?.unit_amount || 0) / 100).toFixed(2)}
         </p>
         <div>
-          <button onClick={() => removeItem(id)}>-</button>
+          <button onClick={() => removeItem(normalizedId)}>-</button>
           <span>{quantity}</span>
           <button onClick={() => onAddItem()}>+</button>
         </div>
